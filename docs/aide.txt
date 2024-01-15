@@ -1,0 +1,11 @@
+Aide pour les touches des fonctionnalités:
+Touches
+D: Forcer le mode jour
+N: Forcer le mode nuit
+R: Activer la pluie
+T: Désactiver la pluie
+flèches: déplacement
+
+Exécution du système:
+Aller dans scr avec: cd src
+Pour exécuter le code: python3 main.py
