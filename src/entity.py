@@ -40,22 +40,3 @@ class Attaque(pygame.sprite.Sprite):
 		self.text.draw_text(surf, self.attribut.attaque[self.name_pok][1], 70, x - 300, y, Colors.BLACK)
 		self.cadre1 = pygame.Rect.copy(self.text.text_rect)
 		pygame.draw.rect(surf, Colors.BLACK, self.cadre1, 2)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

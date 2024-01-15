@@ -12,6 +12,7 @@ class Game:
 		self.clock = pygame.time.Clock()
 		self.level = Level()
 		self.game_over = False
+		self.fight_mode = False
 		
 	#écran de démarrage
 	def start_screen(self):

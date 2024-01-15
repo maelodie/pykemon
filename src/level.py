@@ -224,43 +224,43 @@ class Level:
 			self.lacs.Drought()
 
 		#collision avec un pokemon
-		if self.player.collision_pokemon != 0:
-			self.combat()
+		#if self.player.collision_pokemon != 0:
+		#self.combat()
 
-		else:
-			#pas de collision
-			self.all_sprites.player_center(self.player)
+		#else:
+		#pas de collision
+		self.all_sprites.player_center(self.player)
 
-			#mise à jour du player
-			self.player_alive()
-			self.player.lose_pv(self.fire_trees)
+		#mise à jour du player
+		self.player_alive()
+		self.player.lose_pv(self.fire_trees)
 
-			#feu de forêt
-			self.feu.forest(self.rain.raining)
-			for pk in Pokemon.pok_fire_list:
-				pk.fire_tree(self.all_sprites, self.collision_sprites, self.tree_sprites, self.healthy_trees, self.fire_trees)
+		#feu de forêt
+		self.feu.forest(self.rain.raining)
+		for pk in Pokemon.pok_fire_list:
+			pk.fire_tree(self.all_sprites, self.collision_sprites, self.tree_sprites, self.healthy_trees, self.fire_trees)
 
-			#cycle jour/nuit
-			self.sky.display(dt)
-			self.sky.setTime()
+		#cycle jour/nuit
+		self.sky.display(dt)
+		self.sky.setTime()
 
-			#temperature
-			self.temperature.display(len(self.healthy_trees), self.display_surface)
+		#temperature
+		self.temperature.display(len(self.healthy_trees), self.display_surface)
 
-			#mise à jour de tous les sprites
-			self.all_sprites.update(dt)
+		#mise à jour de tous les sprites
+		self.all_sprites.update(dt)
 
-			#chasse des pokémons poison
-			for poke in Pokemon.pok_poison_list:
-				poke.hunt(dt)
+		#chasse des pokémons poison
+		for poke in Pokemon.pok_poison_list:
+			poke.hunt(dt)
 
-			#contamination et fuite
-			for poke in Pokemon.pok_fire_list:
-				poke.contamination()
-				poke.escape(dt)
-			for poke in Pokemon.pok_water_list:
-				poke.contamination()
-				poke.escape(dt)
+		#contamination et fuite
+		for poke in Pokemon.pok_fire_list:
+			poke.contamination()
+			poke.escape(dt)
+		for poke in Pokemon.pok_water_list:
+			poke.contamination()
+			poke.escape(dt)
 
 		#Graphes (au choix)
 		#Pokemon.afficher(self)
