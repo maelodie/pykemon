@@ -11,6 +11,7 @@ This Python-based project, powered by the Pygame library, creates a dynamic life
 - Day and night cycle triggered manually (D/N keys) or automated.
 - Temperature display indicating long-term changes in simulation time.
 - Combat mode allowing the character to face and defeat Pokémon.
+
 A detailed explanation about the aims of the project is included in /docs.
 
 ## INSTALLATION
