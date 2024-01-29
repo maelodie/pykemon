@@ -1,5 +1,5 @@
 # PALLET TOWN : A PYKEMON GAME
-
+![map][![image](https://github.com/maelodie/pykemon/assets/116497786/3cb0f93b-2783-4453-ab8d-8f28d31e917e)
 ## DESCRIPTION
 This Python-based project, powered by the Pygame library, creates a dynamic life simulation in a Pokémon-themed environment, in the context of the LU2IN013 teaching unit at Sorbonne University about project development using SCRUM methods. Key features include:
 - Customized map with forests, lakes, villages, and islands using Tiled
