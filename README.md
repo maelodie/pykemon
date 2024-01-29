@@ -40,5 +40,5 @@ https://www.spriters-resource.com
 
 ## CONTRIBUTORS
 Special thanks to the following individuals with whom I've worked with for this project: 
-- Jules MAZLUM
+- [Jules MAZLUM](https://github.com/julesmazlum)
 - Eva Farin-Reis VIEGAS
